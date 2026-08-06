@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una sorpresa muy especial para celebrar un día inolvidable. Feliz Cumpleaños.">
+    <meta name="keywords" content="Feliz cumpleaños, sorpresa, regalo, landing page premium">
+    <meta name="theme-color" content="#050505">
+    
+    <!-- Open Graph / Twitter Cards -->
+    <meta property="og:title" content="Feliz Cumpleaños - Una Sorpresa Especial">
+    <meta property="og:description" content="Porque las personas especiales merecen detalles especiales.">
+    <meta property="og:type" content="website">
+    
+    <title>Feliz Cumpleaños Mujer ❤️</title>
+    
+    <!-- Favicon (Asegúrate de tenerlo en la ruta correcta) -->
+    <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cursor Personalizado (Solo Desktop) -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Controles Flotantes -->
+    <button class="music-btn" id="music-btn" aria-label="Reproducir música">
+        <svg id="music-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"></path></svg>
+    </button>
+    
+    <button class="btn-up" id="btn-up" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
+    </button>
+
+    <!-- Partículas y Fondos Globales -->
+    <div class="particles-bg" id="particles-bg"></div>
+
+    <!-- SECCIÓN 1: INTRO (Pantalla de carga / Sorpresa) -->
+    <section class="intro" id="intro">
+        <div class="intro-content">
+            <p class="typewriter-text" id="intro-text"></p>
+            <button class="btn-primary fade-hidden" id="btn-discover">Descubrir la sorpresa</button>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="main-content" id="main-content">
+        
+        <!-- SECCIÓN 2: HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-glow bg-blue"></div>
+            <div class="hero-glow bg-green"></div>
+            
+            <div class="hero-container reveal">
+                <div class="hero-image-wrapper">
+    <!-- El video debe estar en formato MP4 o WebM -->
+    <video src="img/video.mp4" class="hero-video" autoplay loop muted playsinline poster="img/foto1.jpg"></video>
+</div>
+                <div class="hero-text">
+                    <h1 class="title-vibes">Feliz Cumpleaños</h1>
+                    <h1 class="title-vibes"> Yurainis Brito</h1>
+                    <h2 class="subtitle">07 Agosto 2026</h2>
+                    <p class="elegant-text">Hoy celebramos la magia de tu existencia, la luz que aportas al mundo y los momentos inolvidables que has compartido.</p>
+                    <a href="#carta" class="btn-gradient">Leer mensaje especial</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: CARTA (Glassmorphism) -->
+        <section class="carta-section" id="carta">
+            <div class="glass-card reveal slide-up">
+                <div class="glass-content">
+                    <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/></svg>
+                    <p id="carta-text" class="carta-body"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: GALERÍA (Masonry) -->
+        <section class="galeria-section" id="galeria">
+            <h2 class="section-title reveal">Tus <span class="highlight">Fotos</span></h2>
+            <div class="masonry-grid reveal">
+                <div class="masonry-item" data-index="0"><img src="img/foto2.jpeg" alt="Recuerdo 1" loading="lazy"></div>
+                <div class="masonry-item" data-index="1"><img src="img/foto3.jpeg" alt="Recuerdo 2" loading="lazy"></div>
+                <div class="masonry-item" data-index="2"><img src="img/foto4.jpeg" alt="Recuerdo 3" loading="lazy"></div>
+                <div class="masonry-item" data-index="3"><img src="img/foto5.jpeg" alt="Recuerdo 4" loading="lazy"></div>
+                <div class="masonry-item" data-index="4"><img src="img/foto6.jpeg" alt="Recuerdo 5" loading="lazy"></div>
+                <div class="masonry-item" data-index="5"><img src="img/foto7.jpeg" alt="Recuerdo 6" loading="lazy"></div>
+            </div>
+        </section>
+
+       <!-- Lightbox Profesional Multiformato -->
+    <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+    <div class="lightbox-counter" id="lightbox-counter">1 / 7</div>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Anterior">&#10094;</button>
+    
+    <!-- Soportes de Medios -->
+    <img src="" alt="Imagen ampliada" class="lightbox-img" id="lightbox-img">
+    <video src="" class="lightbox-video" id="lightbox-video" controls autoplay loop playsinline style="display: none;"></video>
+    
+    <button class="lightbox-next" id="lightbox-next" aria-label="Siguiente">&#10095;</button>
+    </div>
+
+        <!-- SECCIÓN 5: CUALIDADES -->
+        <section class="cualidades-section" id="cualidades">
+            <h2 class="section-title reveal">Lo que te hace <span class="highlight">Única</span></h2>
+            <div class="cards-grid">
+                <article class="feature-card reveal slide-up" style="transition-delay: 100ms;">
+                    <div class="card-icon">✨</div>
+                    <h3>Luz Propia</h3>
+                    <p>Iluminas cualquier lugar al que llegas con tu increíble energía.</p>
+                </article>
+                <article class="feature-card reveal slide-up" style="transition-delay: 200ms;">
+                    <div class="card-icon">💖</div>
+                    <h3>Corazón Gigante</h3>
+                    <p>Tu capacidad de amar y escuchar a los demás no tiene límites.</p>
+                </article>
+                <article class="feature-card reveal slide-up" style="transition-delay: 300ms;">
+                    <div class="card-icon">🚀</div>
+                    <h3>Inspiración</h3>
+                    <p>Eres un motor que impulsa a quienes te rodean a ser mejores.</p>
+                </article>
+                <article class="feature-card reveal slide-up" style="transition-delay: 400ms;">
+                    <div class="card-icon">😊</div>
+                    <h3>Sonrisa Única</h3>
+                    <p>La alegría que transmites es simplemente contagiosa e inolvidable.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 6: FRASES -->
+        <section class="frases-section reveal" id="frases">
+            <div class="frases-container">
+                <p class="frase active">"Nunca dejes de sonreír."</p>
+                <p class="frase">"Gracias por existir."</p>
+                <p class="frase">"Eres increíble, recuérdalo siempre."</p>
+                <p class="frase">"Nunca cambies tu hermosa esencia."</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 7: REGALO -->
+        <section class="regalo-section" id="regalo">
+            <h2 class="section-title reveal">Un pequeño <span class="highlight">Detalle</span></h2>
+            <div class="gift-container reveal">
+                <div class="gift-box" id="gift-box">
+                    <div class="box-body">
+                        <div class="box-lid"></div>
+                        <div class="box-ribbon"></div>
+                        <div class="box-ribbon-vertical"></div>
+                        <span class="click-text">Haz Clic</span>
+                    </div>
+                </div>
+                <div class="gift-message fade-hidden" id="gift-message">
+                    <h3>¡Sorpresa! 🎉</h3>
+                    <p>Que todos tus sueños se hagan realidad hoy y siempre y no te olvides que puedes contar conmigo siempre que lo desees.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 8: MENSAJE FINAL -->
+        <section class="final-section reveal fade-in" id="mensaje-final">
+            <div class="final-content">
+                <h2 class="title-vibes large">Brindo por ti</h2>
+                <p class="elegant-text">Hoy celebras el milagro de tu vida. Espero que este pequeño espacio digital te haya sacado una sonrisa.</p>
+                <div class="firma">
+                    <p>Con mucho cariño,</p>
+                    <p class="firma-nombre">Tu gran amigo ❤️</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="minimal-footer">
+        <p>&copy; 2026. Hecho con ❤️ y código para una persona especial.</p>
+    </footer>
+
+    <!-- Audio Player (Oculto) -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="music/musica.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
