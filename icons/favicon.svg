@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+    <defs>
+        <!-- Gradiente Premium -->
+        <linearGradient id="premiumGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#009dff" />
+            <stop offset="100%" stop-color="#00d47e" />
+        </linearGradient>
+        
+        <!-- Sombra sutil para dar volumen sin ensuciar el diseño -->
+        <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+            <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000000" flood-opacity="0.25"/>
+        </filter>
+    </defs>
+
+    <!-- Fondo transparente -->
+    <rect width="512" height="512" fill="transparent"/>
+
+    <!-- Agrupación del pastel con sombra -->
+    <g filter="url(#subtleShadow)">
+        
+        <!-- Piso Inferior -->
+        <rect x="106" y="280" width="300" height="140" rx="16" fill="url(#premiumGradient)" />
+        
+        <!-- Piso Superior -->
+        <rect x="156" y="160" width="200" height="120" rx="14" fill="url(#premiumGradient)" />
+        
+        <!-- Acentos de diseño (Líneas blancas limpias en lugar de decoraciones saturadas) -->
+        <rect x="106" y="340" width="300" height="12" fill="#ffffff" opacity="0.9" />
+        <rect x="156" y="210" width="200" height="12" fill="#ffffff" opacity="0.9" />
+
+        <!-- Vela Minimalista -->
+        <rect x="240" y="70" width="32" height="90" rx="8" fill="#ffffff" />
+        
+        <!-- Mecha -->
+        <rect x="252" y="50" width="8" height="20" rx="4" fill="#ffffff" opacity="0.6"/>
+
+        <!-- Llama geométrica estilizada -->
+        <path d="M256 10 C 282 35, 282 60, 256 65 C 230 60, 230 35, 256 10 Z" fill="url(#premiumGradient)" stroke="#ffffff" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+</svg>
